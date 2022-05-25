@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="983.0" style="-fx-background-color: d1c09f;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SaleProfile">
+   <children>
+      <ImageView fitHeight="558.0" fitWidth="764.0" layoutX="223.0" layoutY="1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Image/0ba2ebef4237ef53a158b340bd458bfb.jpg" />
+         </image>
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </ImageView>
+      <VBox prefHeight="558.0" prefWidth="225.0" style="-fx-background-color: c2a180;">
+         <children>
+            <Pane prefHeight="252.0" prefWidth="215.0">
+               <children>
+                  <ImageView fx:id="dp" fitHeight="109.0" fitWidth="114.0" layoutX="53.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Image/icons8-circled-user-64.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="uname" layoutX="73.0" layoutY="158.0" prefHeight="22.0" prefWidth="83.0">
+                     <font>
+                        <Font name="Bell MT Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="14.0" layoutY="249.0" prefHeight="3.0" prefWidth="200.0" />
+               </children>
+            </Pane>
+            <Pane prefHeight="303.0" prefWidth="225.0">
+               <children>
+                  <Button layoutX="24.0" layoutY="165.0" mnemonicParsing="false" onAction="#switchToProfile" prefHeight="52.0" prefWidth="177.0" style="-fx-background-color: e0c1b4; -fx-background-radius: 30;" text="Reviews">
+                     <font>
+                        <Font name="Baskerville Old Face" size="19.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="33.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/icons8-star-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button disable="true" layoutX="27.0" layoutY="104.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="171.0" style="-fx-background-color: e0c1b4; -fx-background-radius: 30;" text=" For Sale">
+                     <font>
+                        <Font name="Baskerville Old Face" size="19.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/icons8-buy-100.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="84.0" layoutY="234.0" mnemonicParsing="false" onAction="#switchToLogIn" prefHeight="38.0" prefWidth="58.0" style="-fx-background-color: bd0202; -fx-background-radius: 20;" text="Logout" textFill="#f5f5f5">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+      <Button layoutX="505.0" layoutY="41.0" mnemonicParsing="false" onAction="#switchToBookUploadForm" prefHeight="52.0" prefWidth="177.0" style="-fx-background-color: bd0202; -fx-background-radius: 20;" text="Upload " textFill="#f5f5f5">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="903.0" layoutY="15.0" mnemonicParsing="false" onAction="#switchToProfile" prefHeight="53.0" prefWidth="37.0" style="-fx-background-radius: 30;">
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/icons8-circled-user-64.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <VBox fx:id="main" alignment="CENTER" layoutX="234.0" layoutY="103.0" prefHeight="399.0" prefWidth="741.0" spacing="20.0" style="-fx-background-color: #c2a79b60;">
+         <children>
+            <HBox fx:id="H1" alignment="CENTER" prefHeight="165.0" prefWidth="737.0" spacing="30.0" VBox.vgrow="NEVER">
+               <children>
+                  <VBox fx:id="v1" alignment="TOP_CENTER" prefHeight="160.0" prefWidth="130.0" spacing="5.0" HBox.hgrow="NEVER">
+                     <children>
+                        <ImageView fx:id="i1" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="l1">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="l2">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Label>
+                        <Hyperlink fx:id="h1" onAction="#page1">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Hyperlink>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="v2" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="130.0" spacing="5.0">
+                     <children>
+                        <ImageView fx:id="i2" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="l3">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="l4">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Label>
+                        <Hyperlink fx:id="h2" onAction="#page2">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Hyperlink>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="v3" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="130.0" spacing="5.0">
+                     <children>
+                        <ImageView fx:id="i3" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="l5">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="l6">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Label>
+                        <Hyperlink fx:id="h3" onAction="#page3">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Hyperlink>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="v4" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="130.0" spacing="5.0">
+                     <children>
+                        <ImageView fx:id="i4" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="l7">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="l8">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Label>
+                        <Hyperlink fx:id="h4" onAction="#page4">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Hyperlink>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="v5" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="130.0" spacing="5.0">
+                     <children>
+                        <ImageView fx:id="i5" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="l9">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="l10">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Label>
+                        <Hyperlink fx:id="h5" onAction="#page5">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Hyperlink>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox fx:id="H2" alignment="CENTER" prefHeight="169.0" prefWidth="738.0" spacing="10.0">
+               <children>
+                  <VBox fx:id="v6" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="130.0" spacing="5.0" HBox.hgrow="NEVER">
+                     <children>
+                        <ImageView fx:id="i6" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="l11">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="l12">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Label>
+                        <Hyperlink fx:id="h6" onAction="#page6">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Hyperlink>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="v7" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="130.0" spacing="5.0">
+                     <children>
+                        <ImageView fx:id="i7" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="l13">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="l14">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Label>
+                        <Hyperlink fx:id="h7" onAction="#page7">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Hyperlink>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="v8" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="130.0" spacing="5.0">
+                     <children>
+                        <ImageView fx:id="i8" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="l15">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="l16">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Label>
+                        <Hyperlink fx:id="h8" onAction="#page8">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Hyperlink>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="v9" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="130.0" spacing="5.0">
+                     <children>
+                        <ImageView fx:id="i9" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="l17">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="l18">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Label>
+                        <Hyperlink fx:id="h9" onAction="#page9">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Hyperlink>
+                     </children>
+                  </VBox>
+                  <VBox fx:id="v10" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="130.0" spacing="5.0">
+                     <children>
+                        <ImageView fx:id="i10" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+                        <Label fx:id="l19">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="l20">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font></Label>
+                        <Hyperlink fx:id="h10" onAction="#page10">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Hyperlink>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="button" layoutX="412.0" layoutY="-55.0" mnemonicParsing="false" onAction="#next" text="next" />
+      <Button fx:id="buttonB" layoutX="670.0" layoutY="502.0" mnemonicParsing="false" onAction="#back" prefHeight="38.0" prefWidth="58.0" style="-fx-background-color: bd0202; -fx-background-radius: 20;" text="Back" textFill="#f5f5f5">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonN" layoutX="403.0" layoutY="502.0" mnemonicParsing="false" onAction="#next" prefHeight="38.0" prefWidth="58.0" style="-fx-background-color: bd0202; -fx-background-radius: 20;" text="Next" textFill="#f5f5f5">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" contentDisplay="TOP" layoutX="235.0" layoutY="-2.0" mnemonicParsing="false" onAction="#switchToHomePage" prefHeight="48.0" prefWidth="97.0" style="-fx-background-color: transparent;" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Book Antiqua Bold" size="22.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="39.0" fitWidth="98.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/text-1623273001233.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

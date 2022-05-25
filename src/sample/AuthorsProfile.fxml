@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.GaussianBlur?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="490.0" prefWidth="745.0" style="-fx-background-color: d1c09f;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AuthorProfile">
+   <children>
+      <ImageView fitHeight="490.0" fitWidth="413.0" layoutX="365.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/98356a38f39d01fd8320a4e9132980d7.jpg" />
+         </image>
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="490.0" fitWidth="413.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/98356a38f39d01fd8320a4e9132980d7.jpg" />
+         </image>
+         <effect>
+            <GaussianBlur />
+         </effect>
+      </ImageView>
+      <Button layoutX="598.0" layoutY="428.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="99.0" style="-fx-background-color: ba8d6c; -fx-background-radius: 20;" text="Follow">
+         <font>
+            <Font name="Bell MT Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="571.0" layoutY="14.0" mnemonicParsing="false" onAction="#switchToHomePage" prefHeight="33.0" prefWidth="165.0" style="-fx-background-color: ffffff00;">
+         <graphic>
+            <ImageView fitHeight="39.0" fitWidth="154.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/text-1623273001233.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="14.0" layoutY="35.0" prefHeight="33.0" prefWidth="138.0" text="Author's Profile : " textFill="WHITE" underline="true">
+         <font>
+            <Font name="Bell MT Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="179.0" layoutY="32.0" prefHeight="39.0" prefWidth="184.0" text="Leigh Burdugo " textFill="WHITE">
+         <font>
+            <Font name="Garamond Bold" size="24.0" />
+         </font>
+      </Label>
+      <Pane layoutX="11.0" layoutY="88.0" opacity="0.64" prefHeight="360.0" prefWidth="536.0" style="-fx-background-color: ede3df;">
+         <effect>
+            <Blend />
+         </effect>
+         <children>
+            <Label layoutX="14.0" layoutY="22.0" text="Born       : ">
+               <font>
+                  <Font name="Garamond Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="67.0" text="Website  : ">
+               <font>
+                  <Font name="Garamond Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="102.0" text="Genre     :">
+               <font>
+                  <Font name="Garamond Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="145.0" text="About     :">
+               <font>
+                  <Font name="Garamond Bold" size="20.0" />
+               </font>
+            </Label>
+            <Text layoutX="14.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <Label layoutX="54.0" layoutY="220.0" prefHeight="79.0" prefWidth="422.0" />
+            <Text layoutX="13.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Leigh Bardugo is a #1 New York Times bestselling author of fantasy novels and the creator of the Grishaverse (now a Netflix original series) which spans the Shadow and Bone Trilogy, the Six of Crows Duology, the King of Scars Duology, and The Language of Thorns—with more to come. Her short stories can be found in multiple anthologies, including the Best American Science Fiction &amp; Fantasy. Her other works include Wonder Woman: Warbringer and Ninth House (Goodreads Choice Winner for Best Fantasy 2019) which is being developed for television by Amazon Studios. Leigh grew up in Southern California and graduated from Yale University. These days she lives and writes in Los Angeles" wrappingWidth="495.13671875">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="115.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Young Adult, Science Fiction, Historical Fiction, Fantasy" wrappingWidth="384.13671875">
+               <font>
+                  <Font name="Garamond Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="115.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jerusalem, Israel. April, 06" wrappingWidth="342.13671875">
+               <font>
+                  <Font name="Garamond Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="115.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="www.leighburdugo.com" wrappingWidth="212.13671875">
+               <font>
+                  <Font name="Garamond Bold" size="15.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <ImageView fitHeight="270.0" fitWidth="200.0" layoutX="561.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Image/2017_-_Leigh_Bardugo_Tea_Headshot.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="217.0" layoutY="455.0" mnemonicParsing="false" style="-fx-background-color: 7a8d6c;" text="Books by This Author" />
+   </children>
+</AnchorPane>
