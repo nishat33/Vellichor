@@ -1,0 +1,1 @@
+Vellichor is an online second hand book store. Users who want to sell their used book has to upload a photo, along with some other informations such as: condition, location, phone number, preferred delivery system for other users to check. A user can search for books by title, author or genre, and can add books to their wishlist.
